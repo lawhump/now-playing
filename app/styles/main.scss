@@ -118,7 +118,9 @@ body {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-    
+    html, body {
+        overflow: visible;    
+    }
 }
 
 /* Extra Small Devices, Phones */ 

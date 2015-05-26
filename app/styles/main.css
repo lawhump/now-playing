@@ -103,6 +103,12 @@ body {
  }
 
 /* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /* line 121, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
+  html, body {
+    overflow: visible; }
+ }
+
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
 
