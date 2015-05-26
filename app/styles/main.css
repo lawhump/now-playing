@@ -23,24 +23,24 @@ body {
 .header {
   text-align: center;
   font-family: 'Walter Turncoat', cursive;
-  color: #fff; }
+  color: #fff;
+  min-height: 60px;
+  padding: 20px 0; }
 
-/* line 23, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
+/* line 26, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
 .result {
   font-family: 'Kreon', serif;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 60px 0;
+  padding: 20px 0;
   width: 100%;
   background: url(../images/greyzz_@2X.png); }
-  /* line 33, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
+  /* line 34, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
   .result .container {
     position: relative;
     display: block;
     width: 75vw;
     margin: 0 auto; }
-  /* line 40, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
+  /* line 41, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
   .result .row {
     text-align: center;
     /*
@@ -52,7 +52,7 @@ body {
             line-height: 0    
         }
         */ }
-    /* line 53, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
+    /* line 54, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
     .result .row div {
       display: inline-block;
       text-align: center;
@@ -60,28 +60,28 @@ body {
       height: auto;
       vertical-align: top;
       display: inline-block; }
-    /* line 62, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
+    /* line 63, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
     .result .row .left {
       text-align: center;
       background-color: white; }
-      /* line 66, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
+      /* line 67, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
       .result .row .left img {
         padding: 7px; }
-      /* line 70, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
+      /* line 71, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
       .result .row .left .title {
         color: #287326; }
-    /* line 76, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
+    /* line 77, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
     .result .row .right h3 {
       display: inline-block;
       margin: 0.5em 1em;
       padding: 5px;
       cursor: pointer; }
-    /* line 83, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
+    /* line 84, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
     .result .row .right ol {
       color: #287326;
       text-align: left;
       margin-top: 1.4em; }
-    /* line 89, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
+    /* line 90, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
     .result .row .right li {
       color: #000;
       line-height: 1.4;
@@ -90,21 +90,32 @@ body {
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
-  /* line 102, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
+  /* line 103, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
   div.result .container {
     width: 90vw; }
  }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /* line 112, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
-  div.result .row div {
-    margin: 5px 3vw; }
+  /* line 111, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
+  html, body {
+    overflow: visible; }
+
+  /* line 115, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
+  div.header {
+    padding: 10px 0; }
+
+  /* line 119, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
+  div.result {
+    margin: 20px 0; }
+    /* line 122, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
+    div.result .row div {
+      margin: 5px 3vw; }
  }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  /* line 121, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
+  /* line 131, /Users/lawrencehumphrey/Dev/WAILTnew/app/styles/main.scss */
   html, body {
     overflow: visible; }
  }

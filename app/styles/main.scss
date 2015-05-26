@@ -18,15 +18,16 @@ body {
     text-align: center;
     font-family: 'Walter Turncoat', cursive;
     color: #fff;
+    
+    min-height: 60px;
+    padding: 20px 0;
 }
 
 .result {
     font-family: 'Kreon', serif;
     
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 60px 0;
+    padding: 20px 0;
     width: 100%;
     background: url(../images/greyzz_@2X.png);
     
@@ -107,7 +108,16 @@ body {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+    html, body {
+        overflow: visible;    
+    }
+    
+    div.header {
+        padding: 10px 0;    
+    }
+    
     div.result {
+        margin: 20px 0;
         .row {
             div {
                 margin: 5px 3vw;    
