@@ -1,1 +1,9 @@
-<div class="preloader-faves loaded hidden"> <div class="la-line-scale-pulse-out-faves"> <div></div> <div></div> <div></div> <div></div> <div></div> </div> </div> <section class="favorites-full"> <div class="layer"></div> <div class="favorites-container"> <div class="button"> <a href="#/"><i class="fa fa-long-arrow-left"></i></a> </div> <h2>Favorites</h2> <div class="dropdowns"> <select ng-model="category" ng-change="update()" ng-options="cat.name for cat in categories"></select> <select ng-model="time" ng-change="update()" ng-options="t.period for t in times"></select> </div> <div class="favorites-results"> <ol> <li ng-click="clicked=!clicked" ng-repeat="item in top track by $index">{{$index+1}}. {{item.name}} <span ng-hide="category.value=='artists'">-</span> {{item.artist.name}}<br><span ng-show="clicked">Play Count: {{item.playcount}}</span></li> </ol> </div> </div> </section>
+<!-- <div class="preloader-faves loaded hidden"> 
+    <div class="la-line-scale-pulse-out-faves">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div> --> <section class="favorites-full"> <div class="layer"></div> <div class="favorites-container"> <div class="button"> <a href="#/"><span class="left"></span></a> </div> <h2>Favorites</h2> <div class="dropdowns"> <select ng-model="category" ng-change="update()" ng-options="cat.name for cat in categories"></select> <select ng-model="time" ng-change="update()" ng-options="t.period for t in times"></select> </div> <div class="favorites-results"> <ol> <li ng-click="clicked=!clicked" ng-repeat="item in top track by $index">{{$index+1}}. {{item.name}} <span ng-hide="category.value=='artists'">-</span> {{item.artist.name}}<br><span ng-show="clicked">Play Count: {{item.playcount}}</span></li> </ol> </div> </div> </section>
