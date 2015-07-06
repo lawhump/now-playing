@@ -1,0 +1,88 @@
+.activity-full {
+}
+
+.egg-to-dark {
+	@include bg-gradient($color-eggshell, $color-dark);
+}
+
+.bg {
+	filter: blur(40px);
+	-webkit-filter: blur(40px);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+}
+
+.dark-layer {
+	@include layer( rgba(0,0,0,0.65) );
+	z-index: 2;
+}
+
+.activity-content { z-index: 3; }
+
+
+h2 { text-align: center; }
+
+.now-playing {
+	margin: 0 auto;
+	max-width: 314px;
+	width: 32vmin;
+	text-align: center;
+    background-color: $color-eggshell;
+
+    img {
+        max-width: 300px;
+        max-height: 300px;
+        width: 30vmin;
+        height:30vmin;
+        padding: 7px;    
+    }
+
+    h4 { margin-top: 0; }
+}
+
+.activity-results {
+	max-width: 530px;
+	margin: 50px auto;
+
+	min-height: 300px;
+	// height: 55vh;
+	max-height: 350px;
+	overflow-y: auto;
+	z-index: 3;
+}
+
+@media only screen and (max-width: 700px) {
+
+	.activity-full {
+		overflow-y: scroll;
+	}
+	
+	.activity-results {
+		overflow-y: visible;
+		max-height: 99999px;
+		min-height: auto;
+	}
+
+	.now-playing {
+		width: 214px;
+
+		img {
+			width: 200px;
+			height: 200px;
+		}
+	}
+}
+// My just in case mobile styling
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	.activity-full {
+		overflow-y: scroll;
+	}
+
+	.activity-results {
+		overflow-y: visible;
+	}
+}

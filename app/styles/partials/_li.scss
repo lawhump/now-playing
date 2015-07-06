@@ -1,0 +1,22 @@
+ol {
+	max-width: 500px;
+	width: 80%;
+	list-style-type: none;
+	padding: 0;
+    margin: 0 auto;
+}
+
+li {
+	background-color: $color-eggshell;
+	margin: 22px 0;
+	padding: 18px;
+
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 0.15s ease-in-out;
+}
+
+li:hover {
+	background-color: $color-salmon;
+}

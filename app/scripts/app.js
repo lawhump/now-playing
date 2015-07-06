@@ -17,17 +17,46 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
+
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+      .when('/activity', {
+        templateUrl: 'views/activity.html',
+        controller: 'ActivityCtrl'
+      })
+      .when('/favorites', {
+        templateUrl: 'views/favorites.html',
+        controller: 'FavoritesCtrl'
       })
       .otherwise({
         redirectTo: '/'
       });
-  });
+  })
+
+  .directive('imageonload', ['$timeout', function($timeout) {
+    return {
+        restrict: 'ACE',
+        link: function(scope, element, attrs) {
+            // var promise = $timeout(function() {
+                element.bind('load', function() {
+                    angular.element(document.getElementsByClassName('preloader')).addClass('loaded');
+                    setTimeout(function() {
+                        angular.element(document.getElementsByClassName('preloader')).addClass('hidden');
+                    }, 1000);
+                });
+            // }, 2000)
+            /*
+            .then(function() {
+                angular.element(document.getElementsByClassName('preloader')).addClass('loaded');
+                setTimeout(function() {
+                    angular.element(document.getElementsByClassName('preloader')).addClass('hidden');
+                }, 1000);
+            });
+            */
+        }
+    };
+}]);

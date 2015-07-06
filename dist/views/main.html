@@ -1,1 +1,31 @@
-<div class="header"> <h1>Currently Enjoying</h1> </div> <div class="result"> <div class="container"> <div class="row"> <div class="left"> <img src="{{url}}"> <h3 class="title">{{MRTname}} - {{MRTartist}}</h3> </div> <div class="right"> <h2><em>Top of the:</em></h2> <h3 ng-click="setPeriod(&quot;7day&quot;)">Week</h3> <h3 ng-click="setPeriod(&quot;3month&quot;)">3 Months</h3> <h3 ng-click="setPeriod(&quot;6month&quot;)">6 Months</h3> <h3 ng-click="setPeriod(&quot;12month&quot;)">Year</h3> <h3 ng-click="setPeriod(&quot;overall&quot;)">All Time</h3> <ol> <li ng-repeat="track in topTracks">{{track.name}} - {{track.artist.name}}</li> </ol> </div> </div> </div> </div>
+<div class="preloader l-blue-to-d-blue"> <div class="la-line-scale-pulse-out"> <div></div> <div></div> <div></div> <div></div> <div></div> </div> </div> <section> <header> <h1>Now Playing</h1> </header> <div class="np"> <img ng-src="{{url}}" imageonload> <h4 class="base" ng-class="currentlyListening">{{MRTname}} - {{MRTartist}}</h4> </div> <div class="activity"> <div class="left-layer"></div> <div class="main-container"> <a href="#/activity">Activity</a> <!-- <div>
+                <img src="http://placehold.it/50x50">
+                <img src="http://placehold.it/50x50">
+                <img src="http://placehold.it/50x50">
+            </div> --> </div> </div> <div class="favorites"> <div class="right-layer"></div> <div class="main-container"> <a href="#/favorites">Favorites</a> <!-- <div>
+                <img src="http://placehold.it/50x50">
+                <img src="http://placehold.it/50x50">
+                <img src="http://placehold.it/50x50">
+            </div> --> </div> </div> </section> <!-- <div class="result">
+    <div class="container">
+        <div class="row">
+            <div class="left">
+                <img ng-src="{{url}}">
+                <h3 class="title">{{MRTname}} - {{MRTartist}}</h3>
+            </div>
+            <div class="right">
+                <h2><em>Top track of the:</em></h2>
+                    <div class="filters">
+                    <h3 ng-class="active: period == '7day'" ng-click='setPeriod("7day")'>Week</h3>
+                    <h3 ng-class="active: period == '3month'" ng-click='setPeriod("3month")'>3 Months</h3>
+                    <h3 ng-class="active: period == '6month'" ng-click='setPeriod("6month")'>6 Months</h3>
+                    <h3 ng-class="active: period == '12month'" ng-click='setPeriod("12month")'>Year</h3>
+                    <h3 ng-class="active: period == 'overall'" ng-click='setPeriod("overall")'>All Time</h3>
+                </div>
+                <ol>
+                    <li ng-repeat="track in topTracks">{{track.name}} -  {{track.artist.name}}</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div> -->

@@ -1,0 +1,81 @@
+.preloader-faves {
+	@include preloader(0.6);
+}
+
+.la-line-scale-pulse-out-faves {
+    @include preloader-lines(4px);
+}
+
+.favorites-full {
+    position: relative;
+    background: url(../../images/skulls.png);
+}
+
+.layer {
+    @include layer( rgba(33, 133, 197, 0.8) );
+    position: fixed;
+}
+
+h2 {
+	margin-top: 100px; 
+	text-align: center; 
+
+}
+
+.dropdowns {
+	max-width: 1000px;
+	margin: 0 auto;
+
+	select:nth-of-type(2) {
+		float: right;
+	}
+}
+
+.favorites-container {
+	position: relative;
+	z-index: 2;
+}
+
+.favorites-results {
+	max-width: 530px;
+	margin: 50px auto;
+
+	height: 60vh;
+	max-height: 650px;
+	overflow-y: auto;
+}
+
+@media only screen and (max-width: 648px) {
+	.dropdowns {
+		text-align: center;
+
+		select:nth-of-type(2) {
+			float: none;
+		}
+	}
+
+	.favorites-container {
+		overflow: auto;
+	}
+
+	.favorites-full {
+		overflow-y: scroll;
+	}
+
+	.favorites-results {
+		overflow-y: visible;
+	}
+}
+
+// Just in case idk???
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	.favorites-full {
+		overflow-y: scroll;
+	}
+
+	.favorites-results {
+		overflow-y: visible;
+	}
+}
