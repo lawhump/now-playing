@@ -1,6 +1,3 @@
-.activity-full {
-}
-
 .egg-to-dark {
 	@include bg-gradient($color-eggshell, $color-dark);
 }
@@ -72,17 +69,5 @@ h2 { text-align: center; }
 			width: 200px;
 			height: 200px;
 		}
-	}
-}
-// My just in case mobile styling
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-	.activity-full {
-		overflow-y: scroll;
-	}
-
-	.activity-results {
-		overflow-y: visible;
 	}
 }

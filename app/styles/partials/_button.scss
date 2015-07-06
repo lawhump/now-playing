@@ -1,22 +1,41 @@
 .button {
-	display: inline-block;
 	position: absolute;
 	top: 20px;
 	left: 20px;
-	width: 60px;
-	height: 60px;
-	border: 6px solid $color-eggshell;
-	border-radius: 50%;
-	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
 	opacity: 0.3;
-	cursor: pointer;
 	transition: all 0.15s ease-in-out;
 
 	a {
-		line-height: 60px;
+		display: inline-block;
+		border-radius: 50%;
 	}
 
 	&:hover {
 		opacity: 0.7;
+	}
+
+	.left {
+		display: inline-block;
+		width: 60px;
+		height: 60px;
+		border: 6px solid $color-eggshell;
+		border-radius: 50%;
+		margin-right: 20px;
+
+		&::after {
+			content: '';
+			display: inline-block;
+			margin-top: 16px;
+			margin-left: 20px;
+			width: 20px;
+			height: 20px;
+			border-top: 7px solid $color-eggshell;
+			border-right: 7px solid $color-eggshell;
+			-moz-transform: rotate(-135deg);
+			-webkit-transform: rotate(-135deg);
+			transform: rotate(-135deg);
+		}
 	}
 }

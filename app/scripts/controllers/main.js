@@ -8,7 +8,7 @@
  * Controller of the wailtnewApp
  */
 
-// var BASE_URL = 'http://ws.audioscrobbler.com/2.0/?api_key=3d386c221b36c1442b384aa1d853bc8c&format=json';
+var BASE_URL = 'http://ws.audioscrobbler.com/2.0/?api_key=3d386c221b36c1442b384aa1d853bc8c&format=json&limit=1';
 
 angular.module('wailtnewApp')
   
