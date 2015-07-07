@@ -27,7 +27,7 @@
     @include bg-gradient($color-blue_lite, $color-blue_dark);
 }
 
-.la-line-scale-pulse-out {
+.la-line-scale-p    ulse-out {
     @include preloader-lines(6px);
 }
 /*
@@ -98,9 +98,9 @@ section {
         flex: 1 auto;
     }
 
-    > div:not(.np) {
-        min-width: 430px;
-    }
+    // > div:not(.np) {
+    //     min-width: 430px;
+    // }
 }
 
 .left-layer {
@@ -148,6 +148,8 @@ section {
 @media only screen and (max-width: 860px) {
     header { display: none; }
 
+    .activity, .favorites { min-width: 100%; }
+
     .activity .main-container {
         position: relative;
         top: -100px;
@@ -159,8 +161,9 @@ section {
     }
 
     .main-container {
-        -webkit-flex: 0 1 100%;
-        flex: 0 1 100%;
+        -webkit-flex: none;
+        flex: none;
+        margin: 0 auto;
     }
 }
 
