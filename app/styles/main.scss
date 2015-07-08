@@ -57,11 +57,12 @@ header {
     animation: pulse 2s infinite;
 }
 
-.np {   
+.np {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50vh;
+    left: 50vw;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 
     max-width: 315px;
     width: 47vh;
@@ -87,6 +88,7 @@ header {
 }
 
 section {
+    background-color: #ccc;
     // Parent
     display: -webkit-flex;
     display: flex;
@@ -104,7 +106,7 @@ section {
 }
 
 .right-layer {
-    @include layer( rgba(33, 133, 197, 0.8) );
+    @include layer( rgba(33, 133, 197, 0.5) );
 }
 
 .activity { 
